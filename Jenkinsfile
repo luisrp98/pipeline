@@ -1,5 +1,5 @@
 pipeline {
-    description('Trabajo pipeline')
+  description('Trabajo pipeline')
   environment {
     imagename = "practicas1lrp/tareapipeline"
     registryCredential = 'practicas1lrp'
