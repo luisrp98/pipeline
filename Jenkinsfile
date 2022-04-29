@@ -1,14 +1,14 @@
 pipeline {
   environment {
     imagename = "practicas1lrp/tareapipeline"
-    registryCredential = 'practicas1lrp'
+    registryCredential = 'practicas1lrp-dockerhub'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/ismailyenigul/hacicenkins.git', branch: 'master', credentialsId: 'ismailyenigul-github-user-token'])
+        git([url: 'https://github.com/luisrp98/pipeline.git', branch: 'main', credentialsId: 'luisrp9812'])
 
       }
     }
