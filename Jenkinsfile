@@ -1,8 +1,8 @@
 pipeline {
     description('Trabajo pipeline')
   environment {
-    imagename = "yenigul/hacicenkins"
-    registryCredential = 'yenigul-dockerhub'
+    imagename = "practicas1lrp/tareapipeline"
+    registryCredential = 'practicas1lrp'
     dockerImage = ''
   }
   agent any
